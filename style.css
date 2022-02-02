@@ -4,3 +4,11 @@
   width: 400px;
   height: 300px;
 }
+.tauler {
+  margin-bottom: 20px;
+}
+h3 {
+  width: 100px;
+  margin-right: 240px;
+  display: inline;
+}

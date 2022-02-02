@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
+  let videsRestants = 4
+  let vides = document.getElementById("vides")
   let cardsChosen = []
   let cardsChosenId = []
   let cardsWon = []
@@ -80,6 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
       alert('You have clicked the same image!')
+      videsRestants = videsRestants - 1
+      vides.innerHTML = videsRestants
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       alert('You found a match')
@@ -92,6 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
       alert('Sorry, try again')
+      videsRestants = videsRestants - 1
+      vides.innerHTML = videsRestants
+    }
+    if (videsRestants == 0) {
+      alert ('Has perdut Albert Raset Hernández.')
     }
     cardsChosen = []
     cardsChosenId = []
@@ -115,7 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
   createBoard()
 })
 
+
 //Examen Albert Raset
+
+//Ex 1
 
 //Ex 2
 function augmentar(x) {
@@ -125,3 +137,7 @@ function augmentar(x) {
 function disminuir(x) {
   x.style.fontSize = "20px";
 }
+
+//Ex 3
+
+//Ex 4
