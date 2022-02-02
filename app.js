@@ -114,3 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   createBoard()
 })
+
+//Examen Albert Raset
+
+//Ex 2
+function augmentar(x) {
+  x.style.fontSize = "30px";
+}
+
+function disminuir(x) {
+  x.style.fontSize = "20px";
+}
